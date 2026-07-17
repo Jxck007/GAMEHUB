@@ -403,6 +403,7 @@
     .ufo { --accent: #7961e8; --accent-soft: #ece7ff; --thumb-bg: linear-gradient(145deg, #172148, #5849a9); }
     .shadow { --accent: #df8441; --accent-soft: #fff0df; --thumb-bg: linear-gradient(145deg, #ffd68a, #ff9c77); }
     .colour { --accent: #28a779; --accent-soft: #dff8ed; --thumb-bg: linear-gradient(145deg, #a8f0d4, #74b8f4); }
+    .flower { --accent: #d6538d; --accent-soft: #ffe5f0; --thumb-bg: linear-gradient(145deg, #f7d8ff, #a9e6cb); }
     .sorting { --accent: #347fcb; --accent-soft: #e1f1ff; --thumb-bg: linear-gradient(145deg, #bfe8ff, #9fd8c2); }
     .fruit { --accent: #df5f55; --accent-soft: #ffe8e3; --thumb-bg: linear-gradient(145deg, #ffcf8a, #ff8d89); }
 
@@ -456,7 +457,7 @@
 <span aria-hidden="true" class="brand-mark">✦</span>
         Calm Play Arcade
       </div>
-<div class="topbar-note">Nine playful worlds · Choose one to begin</div>
+<div class="topbar-note">Ten playful worlds · Choose one to begin</div>
 </nav>
 <header class="hero">
 <div>
@@ -607,9 +608,53 @@
 </a>
 </div>
 </article>
-        <article class="game-card glow">
+        <article class="game-card flower">
 <div class="thumbnail">
 <span class="number-badge">05</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<defs>
+<lineargradient id="petalPink" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0" stop-color="#fff4fb"></stop>
+<stop offset="1" stop-color="#ff8fbd"></stop>
+</lineargradient>
+<lineargradient id="leafGreen" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0" stop-color="#a8f0bb"></stop>
+<stop offset="1" stop-color="#48ad77"></stop>
+</lineargradient>
+</defs>
+<circle cx="180" cy="124" fill="#fff4a8" r="30"></circle>
+<ellipse cx="180" cy="73" fill="url(#petalPink)" rx="34" ry="51"></ellipse>
+<ellipse cx="180" cy="175" fill="url(#petalPink)" rx="34" ry="51"></ellipse>
+<ellipse cx="129" cy="124" fill="url(#petalPink)" rx="51" ry="34"></ellipse>
+<ellipse cx="231" cy="124" fill="url(#petalPink)" rx="51" ry="34"></ellipse>
+<ellipse cx="144" cy="88" fill="url(#petalPink)" rx="33" ry="47" transform="rotate(-45 144 88)"></ellipse>
+<ellipse cx="216" cy="88" fill="url(#petalPink)" rx="33" ry="47" transform="rotate(45 216 88)"></ellipse>
+<ellipse cx="144" cy="160" fill="url(#petalPink)" rx="33" ry="47" transform="rotate(45 144 160)"></ellipse>
+<ellipse cx="216" cy="160" fill="url(#petalPink)" rx="33" ry="47" transform="rotate(-45 216 160)"></ellipse>
+<circle cx="171" cy="118" fill="#5a4660" r="4"></circle>
+<circle cx="189" cy="118" fill="#5a4660" r="4"></circle>
+<path d="M171 134q9 9 18 0" fill="none" stroke="#5a4660" stroke-linecap="round" stroke-width="4"></path>
+<path d="M180 187v43" stroke="#3d9d68" stroke-linecap="round" stroke-width="12"></path>
+<path d="M176 211c-25-22-47-12-52 9 22 8 42 1 52-9Z" fill="url(#leafGreen)"></path>
+<path d="M184 202c23-22 46-14 53 6-20 10-42 5-53-6Z" fill="url(#leafGreen)"></path>
+<circle cx="74" cy="75" fill="#fff" opacity=".88" r="7"></circle>
+<circle cx="292" cy="62" fill="#fff" opacity=".76" r="6"></circle>
+<path d="m74 120 6 12 14 2-10 10 2 14-12-7-13 7 3-14-10-10 13-2Z" fill="#fff078"></path>
+<path d="M286 141c11-9 27-7 35 5-9 11-25 14-35 5-10 9-26 6-35-5 8-12 24-14 35-5Z" fill="#d9f7ff" opacity=".9"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Gentle movement &amp; growth</span>
+<h3>Bloom With Me</h3>
+<p>Help a cheerful flower bloom through a calm, playful interactive experience.</p>
+<a aria-label="Open Bloom With Me game" class="play-link" href="https://flower-blooming-weld.vercel.app/" rel="noopener noreferrer" target="_blank">
+              Play Bloom With Me <span class="arrow">↗</span>
+</a>
+</div>
+</article>
+        <article class="game-card glow">
+<div class="thumbnail">
+<span class="number-badge">06</span>
 <svg aria-hidden="true" viewbox="0 0 360 260">
 <defs>
 <filter id="neon"><fegaussianblur result="blur" stddeviation="5"></fegaussianblur><femerge><femergenode in="blur"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
@@ -632,7 +677,7 @@
 </article>
         <article class="game-card piano">
 <div class="thumbnail">
-<span class="number-badge">06</span>
+<span class="number-badge">07</span>
 <svg aria-hidden="true" viewbox="0 0 360 260">
 <circle cx="68" cy="58" fill="#fff" opacity=".9" r="5"></circle><circle cx="293" cy="50" fill="#fff" opacity=".8" r="7"></circle><circle cx="321" cy="105" fill="#fff" opacity=".7" r="4"></circle>
 <path d="M55 174h250v49H55z" fill="#f7f6ff"></path>
@@ -657,7 +702,7 @@
 </article>
         <article class="game-card bubble">
 <div class="thumbnail">
-<span class="number-badge">07</span>
+<span class="number-badge">08</span>
 <svg aria-hidden="true" viewbox="0 0 360 260">
 <defs>
 <radialgradient cx="30%" cy="25%" id="b1"><stop offset="0" stop-color="#fff" stop-opacity=".95"></stop><stop offset=".18" stop-color="#fff" stop-opacity=".28"></stop><stop offset="1" stop-color="#9deaff" stop-opacity=".32"></stop></radialgradient>
@@ -682,7 +727,7 @@
 </article>
         <article class="game-card fruit">
 <div class="thumbnail">
-<span class="number-badge">08</span>
+<span class="number-badge">09</span>
 <svg aria-hidden="true" viewbox="0 0 360 260">
 <circle cx="94" cy="157" fill="#f45d5d" r="42"></circle>
 <path d="M89 112c4-20 18-30 35-29-2 17-13 29-35 29Z" fill="#56a85f"></path>
@@ -708,7 +753,7 @@
 </article>
         <article class="game-card ufo">
 <div class="thumbnail">
-<span class="number-badge">09</span>
+<span class="number-badge">10</span>
 <svg aria-hidden="true" viewbox="0 0 360 260">
 <circle cx="50" cy="53" fill="#fff" r="4"></circle><circle cx="303" cy="60" fill="#fff" r="5"></circle><circle cx="269" cy="123" fill="#fff" r="3"></circle><circle cx="76" cy="177" fill="#fff" r="3"></circle>
 <path d="M180 75c-28 0-50 18-52 41h104c-2-23-24-41-52-41Z" fill="#a891ff"></path>
@@ -732,7 +777,7 @@
       </div>
 </section>
 <footer class="footer">
-<span><strong>Calm Play Arcade</strong> · A shared launchpad for all nine games.</span>
+<span><strong>Calm Play Arcade</strong> · A shared launchpad for all ten games.</span>
 <span>Tip: press <strong>Tab</strong> to move between game buttons.</span>
 </footer>
 </main>
