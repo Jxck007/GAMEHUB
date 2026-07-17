@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f7f3ff" />
-  <title>Calm Play Arcade</title>
-  <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="#f7f3ff" name="theme-color"/>
+<title>Calm Play Arcade</title>
+<style>
     :root {
       --ink: #25213a;
       --muted: #68627d;
@@ -402,6 +403,8 @@
     .ufo { --accent: #7961e8; --accent-soft: #ece7ff; --thumb-bg: linear-gradient(145deg, #172148, #5849a9); }
     .shadow { --accent: #df8441; --accent-soft: #fff0df; --thumb-bg: linear-gradient(145deg, #ffd68a, #ff9c77); }
     .colour { --accent: #28a779; --accent-soft: #dff8ed; --thumb-bg: linear-gradient(145deg, #a8f0d4, #74b8f4); }
+    .sorting { --accent: #347fcb; --accent-soft: #e1f1ff; --thumb-bg: linear-gradient(145deg, #bfe8ff, #9fd8c2); }
+    .fruit { --accent: #df5f55; --accent-soft: #ffe8e3; --thumb-bg: linear-gradient(145deg, #ffcf8a, #ff8d89); }
 
     .footer {
       display: flex;
@@ -447,248 +450,291 @@
   </style>
 </head>
 <body>
-  <main class="page-shell">
-    <nav class="topbar" aria-label="Game hub navigation">
-      <div class="brand">
-        <span class="brand-mark" aria-hidden="true">✦</span>
+<main class="page-shell">
+<nav aria-label="Game hub navigation" class="topbar">
+<div class="brand">
+<span aria-hidden="true" class="brand-mark">✦</span>
         Calm Play Arcade
       </div>
-      <div class="topbar-note">Seven playful worlds · Choose one to begin</div>
-    </nav>
-
-    <header class="hero">
-      <div>
-        <div class="eyebrow">🌈 One friendly place for every game</div>
-        <h1>Pick a world.<span>Start playing.</span></h1>
-        <p class="hero-copy">
+<div class="topbar-note">Nine playful worlds · Choose one to begin</div>
+</nav>
+<header class="hero">
+<div>
+<div class="eyebrow">🌈 One friendly place for every game</div>
+<h1>Pick a world.<span>Start playing.</span></h1>
+<p class="hero-copy">
           Explore creative, calming and sensory-friendly mini games. Every card opens the original game in a new tab, so returning to this hub is easy.
         </p>
-      </div>
-
-      <div class="hero-art" aria-hidden="true">
-        <div class="orbit"></div>
-        <div class="hero-console">
-          <svg viewBox="0 0 320 260" role="img" aria-label="Colourful game controller illustration">
-            <defs>
-              <linearGradient id="controller" x1="0" x2="1" y1="0" y2="1">
-                <stop offset="0" stop-color="#8b72f3" />
-                <stop offset="1" stop-color="#ec6ca8" />
-              </linearGradient>
-            </defs>
-            <path d="M75 79c-24 4-39 24-45 54l-12 61c-6 31 24 49 45 27l34-35h126l34 35c21 22 51 4 45-27l-12-61c-6-30-21-50-45-54-30-5-48 10-62 20H137c-14-10-32-25-62-20Z" fill="url(#controller)"/>
-            <circle cx="220" cy="126" r="15" fill="#fff" opacity=".9"/>
-            <circle cx="253" cy="145" r="15" fill="#fff" opacity=".72"/>
-            <rect x="73" y="116" width="64" height="18" rx="9" fill="#fff" opacity=".9"/>
-            <rect x="96" y="93" width="18" height="64" rx="9" fill="#fff" opacity=".9"/>
-            <circle cx="162" cy="168" r="10" fill="#ffd86d"/>
-            <path d="M152 58c9-20 29-27 48-17-5 18-22 29-48 17Z" fill="#66d9bb"/>
-            <path d="M145 57c-10-15-26-17-39-5 8 13 23 19 39 5Z" fill="#82e3ca"/>
-          </svg>
-        </div>
-      </div>
-    </header>
-
-    <section aria-labelledby="games-title">
-      <div class="section-heading">
-        <h2 id="games-title">Choose your game</h2>
-        <p>Large buttons, clear labels and colourful previews make every game easy to find.</p>
-      </div>
-
-      <div class="games-grid">
-        <article class="game-card glow">
-          <div class="thumbnail">
-            <span class="number-badge">01</span>
-            <svg viewBox="0 0 360 260" aria-hidden="true">
-              <defs>
-                <filter id="neon"><feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
-              </defs>
-              <path d="M42 176c43-94 99 29 140-58 35-73 72 66 137-13" fill="none" stroke="#ff77e9" stroke-width="12" stroke-linecap="round" filter="url(#neon)"/>
-              <path d="M47 88c38-48 71 31 101-5 31-38 62 26 95-17" fill="none" stroke="#7df9ff" stroke-width="10" stroke-linecap="round" filter="url(#neon)"/>
-              <circle cx="292" cy="172" r="25" fill="none" stroke="#ffe372" stroke-width="9" filter="url(#neon)"/>
-              <path d="M286 124l5-19m-38 39-19-5m91 8 19 5m-33-50 13-15" stroke="#ffe372" stroke-width="7" stroke-linecap="round" filter="url(#neon)"/>
-              <path d="M92 201c0-29 24-52 52-52s52 23 52 52" fill="none" stroke="#9cff8c" stroke-width="10" stroke-linecap="round" filter="url(#neon)"/>
-            </svg>
-          </div>
-          <div class="card-copy">
-            <span class="tag">Creative drawing</span>
-            <h3>Glow Doodle</h3>
-            <p>Draw bright neon trails, shapes and colourful patterns on a glowing canvas.</p>
-            <a class="play-link" href="https://josewa-aghai.github.io/glow-doodle/" target="_blank" rel="noopener noreferrer" aria-label="Open Glow Doodle game">
-              Play Glow Doodle <span class="arrow">↗</span>
-            </a>
-          </div>
-        </article>
-
+</div>
+<div aria-hidden="true" class="hero-art">
+<div class="orbit"></div>
+<div class="hero-console">
+<svg aria-label="Colourful game controller illustration" role="img" viewbox="0 0 320 260">
+<defs>
+<lineargradient id="controller" x1="0" x2="1" y1="0" y2="1">
+<stop offset="0" stop-color="#8b72f3"></stop>
+<stop offset="1" stop-color="#ec6ca8"></stop>
+</lineargradient>
+</defs>
+<path d="M75 79c-24 4-39 24-45 54l-12 61c-6 31 24 49 45 27l34-35h126l34 35c21 22 51 4 45-27l-12-61c-6-30-21-50-45-54-30-5-48 10-62 20H137c-14-10-32-25-62-20Z" fill="url(#controller)"></path>
+<circle cx="220" cy="126" fill="#fff" opacity=".9" r="15"></circle>
+<circle cx="253" cy="145" fill="#fff" opacity=".72" r="15"></circle>
+<rect fill="#fff" height="18" opacity=".9" rx="9" width="64" x="73" y="116"></rect>
+<rect fill="#fff" height="64" opacity=".9" rx="9" width="18" x="96" y="93"></rect>
+<circle cx="162" cy="168" fill="#ffd86d" r="10"></circle>
+<path d="M152 58c9-20 29-27 48-17-5 18-22 29-48 17Z" fill="#66d9bb"></path>
+<path d="M145 57c-10-15-26-17-39-5 8 13 23 19 39 5Z" fill="#82e3ca"></path>
+</svg>
+</div>
+</div>
+</header>
+<section aria-labelledby="games-title">
+<div class="section-heading">
+<h2 id="games-title">Choose your game</h2>
+<p>Large buttons, clear labels and colourful previews make every game easy to find.</p>
+</div>
+<div class="games-grid">
         <article class="game-card memory">
-          <div class="thumbnail">
-            <span class="number-badge">02</span>
-            <svg viewBox="0 0 360 260" aria-hidden="true">
-              <g transform="translate(45 35)">
-                <rect x="8" y="15" width="110" height="145" rx="24" fill="#fff" transform="rotate(-7 63 87)"/>
-                <rect x="26" y="32" width="74" height="108" rx="17" fill="#ffe5ee" transform="rotate(-7 63 87)"/>
-                <circle cx="62" cy="76" r="25" fill="#ff9d78"/>
-                <path d="M45 69l-12-15 22 4m24 11 12-15-22 4" fill="#ff9d78"/>
-                <circle cx="53" cy="77" r="4" fill="#3e3154"/><circle cx="71" cy="77" r="4" fill="#3e3154"/>
-                <path d="M57 88q6 6 12 0" fill="none" stroke="#3e3154" stroke-width="4" stroke-linecap="round"/>
-              </g>
-              <g transform="translate(195 33)">
-                <rect x="8" y="15" width="110" height="145" rx="24" fill="#fff" transform="rotate(7 63 87)"/>
-                <rect x="26" y="32" width="74" height="108" rx="17" fill="#eee6ff" transform="rotate(7 63 87)"/>
-                <circle cx="69" cy="78" r="25" fill="#9278ea"/>
-                <path d="M52 70l-12-15 22 5m24 10 12-15-22 5" fill="#9278ea"/>
-                <circle cx="60" cy="79" r="4" fill="#3e3154"/><circle cx="78" cy="79" r="4" fill="#3e3154"/>
-                <path d="M64 90q6 6 12 0" fill="none" stroke="#3e3154" stroke-width="4" stroke-linecap="round"/>
-              </g>
-              <path d="M160 213h40" stroke="#fff" stroke-width="10" stroke-linecap="round" opacity=".7"/>
-            </svg>
-          </div>
-          <div class="card-copy">
-            <span class="tag">Memory & matching</span>
-            <h3>Memory Pair</h3>
-            <p>Turn over two cards at a time and find every matching picture at your own pace.</p>
-            <a class="play-link" href="https://pair-palace-game.lovable.app/" target="_blank" rel="noopener noreferrer" aria-label="Open Memory Pair game">
+<div class="thumbnail">
+<span class="number-badge">01</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<g transform="translate(45 35)">
+<rect fill="#fff" height="145" rx="24" transform="rotate(-7 63 87)" width="110" x="8" y="15"></rect>
+<rect fill="#ffe5ee" height="108" rx="17" transform="rotate(-7 63 87)" width="74" x="26" y="32"></rect>
+<circle cx="62" cy="76" fill="#ff9d78" r="25"></circle>
+<path d="M45 69l-12-15 22 4m24 11 12-15-22 4" fill="#ff9d78"></path>
+<circle cx="53" cy="77" fill="#3e3154" r="4"></circle><circle cx="71" cy="77" fill="#3e3154" r="4"></circle>
+<path d="M57 88q6 6 12 0" fill="none" stroke="#3e3154" stroke-linecap="round" stroke-width="4"></path>
+</g>
+<g transform="translate(195 33)">
+<rect fill="#fff" height="145" rx="24" transform="rotate(7 63 87)" width="110" x="8" y="15"></rect>
+<rect fill="#eee6ff" height="108" rx="17" transform="rotate(7 63 87)" width="74" x="26" y="32"></rect>
+<circle cx="69" cy="78" fill="#9278ea" r="25"></circle>
+<path d="M52 70l-12-15 22 5m24 10 12-15-22 5" fill="#9278ea"></path>
+<circle cx="60" cy="79" fill="#3e3154" r="4"></circle><circle cx="78" cy="79" fill="#3e3154" r="4"></circle>
+<path d="M64 90q6 6 12 0" fill="none" stroke="#3e3154" stroke-linecap="round" stroke-width="4"></path>
+</g>
+<path d="M160 213h40" opacity=".7" stroke="#fff" stroke-linecap="round" stroke-width="10"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Memory &amp; matching</span>
+<h3>Memory Pair</h3>
+<p>Turn over two cards at a time and find every matching picture at your own pace.</p>
+<a aria-label="Open Memory Pair game" class="play-link" href="https://pair-palace-game.lovable.app/" rel="noopener noreferrer" target="_blank">
               Play Memory Pair <span class="arrow">↗</span>
-            </a>
-          </div>
-        </article>
-
-        <article class="game-card bubble">
-          <div class="thumbnail">
-            <span class="number-badge">03</span>
-            <svg viewBox="0 0 360 260" aria-hidden="true">
-              <defs>
-                <radialGradient id="b1" cx="30%" cy="25%"><stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset=".18" stop-color="#fff" stop-opacity=".28"/><stop offset="1" stop-color="#9deaff" stop-opacity=".32"/></radialGradient>
-              </defs>
-              <circle cx="96" cy="152" r="55" fill="url(#b1)" stroke="#fff" stroke-opacity=".75" stroke-width="4"/>
-              <circle cx="212" cy="105" r="70" fill="url(#b1)" stroke="#fff" stroke-opacity=".75" stroke-width="4"/>
-              <circle cx="290" cy="184" r="38" fill="url(#b1)" stroke="#fff" stroke-opacity=".75" stroke-width="4"/>
-              <circle cx="61" cy="62" r="24" fill="url(#b1)" stroke="#fff" stroke-opacity=".75" stroke-width="4"/>
-              <path d="M180 187c17-18 42-18 59 0" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round"/>
-              <circle cx="190" cy="151" r="6" fill="#fff"/><circle cx="228" cy="151" r="6" fill="#fff"/>
-              <path d="M137 57l9 16 18 4-13 12 2 18-16-8-16 8 2-18-13-12 18-4 9-16Z" fill="#ffef88"/>
-            </svg>
-          </div>
-          <div class="card-copy">
-            <span class="tag">Tap & relax</span>
-            <h3>Bubble Paradise</h3>
-            <p>Tap floating bubbles, enjoy cheerful sounds and fill the world with happiness.</p>
-            <a class="play-link" href="https://vasanth551111.github.io/BubbleParadise/" target="_blank" rel="noopener noreferrer" aria-label="Open Bubble Paradise game">
-              Play Bubble Paradise <span class="arrow">↗</span>
-            </a>
-          </div>
-        </article>
-
-        <article class="game-card piano">
-          <div class="thumbnail">
-            <span class="number-badge">04</span>
-            <svg viewBox="0 0 360 260" aria-hidden="true">
-              <circle cx="68" cy="58" r="5" fill="#fff" opacity=".9"/><circle cx="293" cy="50" r="7" fill="#fff" opacity=".8"/><circle cx="321" cy="105" r="4" fill="#fff" opacity=".7"/>
-              <path d="M55 174h250v49H55z" fill="#f7f6ff"/>
-              <path d="M55 174v49m36-49v49m36-49v49m36-49v49m36-49v49m36-49v49m36-49v49m34-49v49" stroke="#4a416d" stroke-width="3"/>
-              <path d="M78 174h22v30H78zm72 0h22v30h-22zm36 0h22v30h-22zm72 0h22v30h-22z" fill="#2c2742"/>
-              <path d="M85 125c10-20 29-12 25 4-3 13-22 12-23 30" fill="none" stroke="#ffbd68" stroke-width="9" stroke-linecap="round"/>
-              <circle cx="84" cy="163" r="12" fill="#ffbd68"/>
-              <path d="M201 91c12-23 35-14 30 5-4 15-26 14-27 35" fill="none" stroke="#7bf1de" stroke-width="9" stroke-linecap="round"/>
-              <circle cx="201" cy="136" r="12" fill="#7bf1de"/>
-              <path d="M276 112c9-18 26-11 23 4-3 12-20 11-21 27" fill="none" stroke="#ff7ebe" stroke-width="8" stroke-linecap="round"/>
-              <circle cx="276" cy="147" r="10" fill="#ff7ebe"/>
-            </svg>
-          </div>
-          <div class="card-copy">
-            <span class="tag">Music & sensory play</span>
-            <h3>Sensory Piano</h3>
-            <p>Touch the keys to create gentle sounds, calming colours and a pressure-free musical space.</p>
-            <a class="play-link" href="https://jebinrufus.neocities.org" target="_blank" rel="noopener noreferrer" aria-label="Open Sensory Piano game">
-              Play Sensory Piano <span class="arrow">↗</span>
-            </a>
-          </div>
-        </article>
-
-        <article class="game-card ufo">
-          <div class="thumbnail">
-            <span class="number-badge">05</span>
-            <svg viewBox="0 0 360 260" aria-hidden="true">
-              <circle cx="50" cy="53" r="4" fill="#fff"/><circle cx="303" cy="60" r="5" fill="#fff"/><circle cx="269" cy="123" r="3" fill="#fff"/><circle cx="76" cy="177" r="3" fill="#fff"/>
-              <path d="M180 75c-28 0-50 18-52 41h104c-2-23-24-41-52-41Z" fill="#a891ff"/>
-              <ellipse cx="180" cy="124" rx="91" ry="37" fill="#d8d0ff"/>
-              <ellipse cx="180" cy="119" rx="56" ry="20" fill="#6b5ec1" opacity=".7"/>
-              <circle cx="124" cy="127" r="8" fill="#ffe77c"/><circle cx="180" cy="139" r="8" fill="#7cf1e1"/><circle cx="236" cy="127" r="8" fill="#ff82b5"/>
-              <path d="M145 151 110 235h140l-35-84" fill="#8affeb" opacity=".22"/>
-              <path d="M180 177l8 16 18 3-13 13 3 18-16-9-16 9 3-18-13-13 18-3 8-16Z" fill="#ffe26f"/>
-              <path d="M289 174l6 12 13 2-10 10 3 13-12-6-12 6 3-13-10-10 13-2 6-12Z" fill="#ff91c8"/>
-            </svg>
-          </div>
-          <div class="card-copy">
-            <span class="tag">Calm space adventure</span>
-            <h3>UFO Adventure</h3>
-            <p>Guide a friendly UFO through space and collect stars with no rush and no obstacles.</p>
-            <a class="play-link" href="https://ufo-star-ea7c55.netlify.app/" target="_blank" rel="noopener noreferrer" aria-label="Open UFO Adventure game">
-              Play UFO Adventure <span class="arrow">↗</span>
-            </a>
-          </div>
-        </article>
-
+</a>
+</div>
+</article>
+        <article class="game-card sorting">
+<div class="thumbnail">
+<span class="number-badge">02</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<rect fill="#fff" height="164" opacity=".9" rx="26" width="276" x="42" y="52"></rect>
+<rect fill="#5fa8e8" height="48" rx="13" width="64" x="64" y="147"></rect>
+<rect fill="#f39a68" height="48" rx="13" width="64" x="148" y="147"></rect>
+<rect fill="#68c49a" height="48" rx="13" width="64" x="232" y="147"></rect>
+<circle cx="89" cy="91" fill="#5fa8e8" r="19"></circle>
+<path d="M158 74h38v38h-38z" fill="#f39a68" rx="8"></path>
+<path d="m264 70 23 40h-46Z" fill="#68c49a"></path>
+<path d="M89 116v23" stroke="#5fa8e8" stroke-linecap="round" stroke-width="9"></path>
+<path d="M177 116v23" stroke="#f39a68" stroke-linecap="round" stroke-width="9"></path>
+<path d="M264 116v23" stroke="#68c49a" stroke-linecap="round" stroke-width="9"></path>
+<path d="m79 132 10 10 10-10m68 0 10 10 10-10m67 0 10 10 10-10" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path>
+<circle cx="302" cy="48" fill="#ffe36f" r="17"></circle>
+<path d="M302 22v10m0 32v10m-26-26h10m32 0h10" stroke="#fff" stroke-linecap="round" stroke-width="6"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Sorting &amp; rearranging</span>
+<h3>Multimode Sorting</h3>
+<p>Sort, group and rearrange colourful objects through multiple activity modes.</p>
+<a aria-label="Open Multimode Sorting game" class="play-link" href="https://share.google/g01I3rHX2t0mjcm0f" rel="noopener noreferrer" target="_blank">
+      Play Multimode Sorting <span class="arrow">↗</span>
+</a>
+</div>
+</article>
         <article class="game-card shadow">
-          <div class="thumbnail">
-            <span class="number-badge">06</span>
-            <svg viewBox="0 0 360 260" aria-hidden="true">
-              <circle cx="100" cy="76" r="33" fill="#ff5d66"/>
-              <path d="M92 42c4-18 20-28 36-24-1 16-14 28-36 24Z" fill="#5dbb6e"/>
-              <path d="M96 55c-9-10-21-11-30-3 6 9 17 13 30 3Z" fill="#71cb7e"/>
-              <path d="M58 153c28-21 58-22 84-2 16 12 20 36 8 50-16 19-76 18-94-2-12-14-9-36 2-46Z" fill="#3e364e" opacity=".82"/>
-              <circle cx="260" cy="82" r="33" fill="#ff5d66"/>
-              <path d="M252 48c4-18 20-28 36-24-1 16-14 28-36 24Z" fill="#5dbb6e"/>
-              <path d="M256 61c-9-10-21-11-30-3 6 9 17 13 30 3Z" fill="#71cb7e"/>
-              <path d="M213 150c28-21 58-22 84-2 16 12 20 36 8 50-16 19-76 18-94-2-12-14-9-36 2-46Z" fill="#fff" opacity=".9"/>
-              <path d="M166 121h32" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
-              <path d="m187 107 14 14-14 14" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </div>
-          <div class="card-copy">
-            <span class="tag">Visual matching</span>
-            <h3>Shadow Match</h3>
-            <p>Look at each picture and choose the shadow with the same shape to earn stars.</p>
-            <a class="play-link" href="https://ilakkiyan809.github.io/Shadow/" target="_blank" rel="noopener noreferrer" aria-label="Open Shadow Match game">
+<div class="thumbnail">
+<span class="number-badge">03</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<circle cx="100" cy="76" fill="#ff5d66" r="33"></circle>
+<path d="M92 42c4-18 20-28 36-24-1 16-14 28-36 24Z" fill="#5dbb6e"></path>
+<path d="M96 55c-9-10-21-11-30-3 6 9 17 13 30 3Z" fill="#71cb7e"></path>
+<path d="M58 153c28-21 58-22 84-2 16 12 20 36 8 50-16 19-76 18-94-2-12-14-9-36 2-46Z" fill="#3e364e" opacity=".82"></path>
+<circle cx="260" cy="82" fill="#ff5d66" r="33"></circle>
+<path d="M252 48c4-18 20-28 36-24-1 16-14 28-36 24Z" fill="#5dbb6e"></path>
+<path d="M256 61c-9-10-21-11-30-3 6 9 17 13 30 3Z" fill="#71cb7e"></path>
+<path d="M213 150c28-21 58-22 84-2 16 12 20 36 8 50-16 19-76 18-94-2-12-14-9-36 2-46Z" fill="#fff" opacity=".9"></path>
+<path d="M166 121h32" stroke="#fff" stroke-linecap="round" stroke-width="10"></path>
+<path d="m187 107 14 14-14 14" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="8"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Visual matching</span>
+<h3>Shadow Match</h3>
+<p>Look at each picture and choose the shadow with the same shape to earn stars.</p>
+<a aria-label="Open Shadow Match game" class="play-link" href="https://ilakkiyan809.github.io/Shadow/" rel="noopener noreferrer" target="_blank">
               Play Shadow Match <span class="arrow">↗</span>
-            </a>
-          </div>
-        </article>
-
+</a>
+</div>
+</article>
         <article class="game-card colour">
-          <div class="thumbnail">
-            <span class="number-badge">07</span>
-            <svg viewBox="0 0 360 260" aria-hidden="true">
-              <path d="M72 50h216a22 22 0 0 1 22 22v132a22 22 0 0 1-22 22H72a22 22 0 0 1-22-22V72a22 22 0 0 1 22-22Z" fill="#fff" opacity=".92"/>
-              <path d="M103 92c22-25 58-31 87-15 23 13 32 37 23 57-7 15-21 20-33 14-8-4-15-2-17 7-4 17-20 27-39 23-29-6-47-35-39-61 3-10 9-18 18-25Z" fill="#ffe1a2"/>
-              <circle cx="119" cy="111" r="13" fill="#ff6f91"/>
-              <circle cx="153" cy="96" r="13" fill="#7c70ef"/>
-              <circle cx="187" cy="108" r="13" fill="#48cbb2"/>
-              <circle cx="196" cy="139" r="13" fill="#ffb94f"/>
-              <circle cx="150" cy="151" r="11" fill="#fff"/>
-              <path d="M239 77c8-8 21-6 26 4l9 18-67 69-24 7 8-23 48-75Z" fill="#57627c"/>
-              <path d="m207 168-24 7 8-23Z" fill="#f3b083"/>
-              <path d="m250 88 14 14-57 59-15-14Z" fill="#ed6f9f"/>
-              <path d="M89 204h184" stroke="#6ccdb2" stroke-width="10" stroke-linecap="round" opacity=".6"/>
-              <circle cx="282" cy="52" r="17" fill="#ffe56d"/>
-              <path d="M282 26v10m0 32v10m-26-26h10m32 0h10" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <div class="card-copy">
-            <span class="tag">Colouring activity</span>
-            <h3>Apply Colour</h3>
-            <p>Choose bright colours and fill the pictures to create your own cheerful artwork.</p>
-            <a class="play-link" href="https://ilakkiyan809.github.io/applyColour/" target="_blank" rel="noopener noreferrer" aria-label="Open Apply Colour game">
+<div class="thumbnail">
+<span class="number-badge">04</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<path d="M72 50h216a22 22 0 0 1 22 22v132a22 22 0 0 1-22 22H72a22 22 0 0 1-22-22V72a22 22 0 0 1 22-22Z" fill="#fff" opacity=".92"></path>
+<path d="M103 92c22-25 58-31 87-15 23 13 32 37 23 57-7 15-21 20-33 14-8-4-15-2-17 7-4 17-20 27-39 23-29-6-47-35-39-61 3-10 9-18 18-25Z" fill="#ffe1a2"></path>
+<circle cx="119" cy="111" fill="#ff6f91" r="13"></circle>
+<circle cx="153" cy="96" fill="#7c70ef" r="13"></circle>
+<circle cx="187" cy="108" fill="#48cbb2" r="13"></circle>
+<circle cx="196" cy="139" fill="#ffb94f" r="13"></circle>
+<circle cx="150" cy="151" fill="#fff" r="11"></circle>
+<path d="M239 77c8-8 21-6 26 4l9 18-67 69-24 7 8-23 48-75Z" fill="#57627c"></path>
+<path d="m207 168-24 7 8-23Z" fill="#f3b083"></path>
+<path d="m250 88 14 14-57 59-15-14Z" fill="#ed6f9f"></path>
+<path d="M89 204h184" opacity=".6" stroke="#6ccdb2" stroke-linecap="round" stroke-width="10"></path>
+<circle cx="282" cy="52" fill="#ffe56d" r="17"></circle>
+<path d="M282 26v10m0 32v10m-26-26h10m32 0h10" stroke="#fff" stroke-linecap="round" stroke-width="6"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Colouring activity</span>
+<h3>Apply Colour</h3>
+<p>Choose bright colours and fill the pictures to create your own cheerful artwork.</p>
+<a aria-label="Open Apply Colour game" class="play-link" href="https://ilakkiyan809.github.io/applyColour/" rel="noopener noreferrer" target="_blank">
               Play Apply Colour <span class="arrow">↗</span>
-            </a>
-          </div>
-        </article>
+</a>
+</div>
+</article>
+        <article class="game-card glow">
+<div class="thumbnail">
+<span class="number-badge">05</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<defs>
+<filter id="neon"><fegaussianblur result="blur" stddeviation="5"></fegaussianblur><femerge><femergenode in="blur"></femergenode><femergenode in="SourceGraphic"></femergenode></femerge></filter>
+</defs>
+<path d="M42 176c43-94 99 29 140-58 35-73 72 66 137-13" fill="none" filter="url(#neon)" stroke="#ff77e9" stroke-linecap="round" stroke-width="12"></path>
+<path d="M47 88c38-48 71 31 101-5 31-38 62 26 95-17" fill="none" filter="url(#neon)" stroke="#7df9ff" stroke-linecap="round" stroke-width="10"></path>
+<circle cx="292" cy="172" fill="none" filter="url(#neon)" r="25" stroke="#ffe372" stroke-width="9"></circle>
+<path d="M286 124l5-19m-38 39-19-5m91 8 19 5m-33-50 13-15" filter="url(#neon)" stroke="#ffe372" stroke-linecap="round" stroke-width="7"></path>
+<path d="M92 201c0-29 24-52 52-52s52 23 52 52" fill="none" filter="url(#neon)" stroke="#9cff8c" stroke-linecap="round" stroke-width="10"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Creative drawing</span>
+<h3>Glow Doodle</h3>
+<p>Draw bright neon trails, shapes and colourful patterns on a glowing canvas.</p>
+<a aria-label="Open Glow Doodle game" class="play-link" href="https://josewa-aghai.github.io/glow-doodle/" rel="noopener noreferrer" target="_blank">
+              Play Glow Doodle <span class="arrow">↗</span>
+</a>
+</div>
+</article>
+        <article class="game-card piano">
+<div class="thumbnail">
+<span class="number-badge">06</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<circle cx="68" cy="58" fill="#fff" opacity=".9" r="5"></circle><circle cx="293" cy="50" fill="#fff" opacity=".8" r="7"></circle><circle cx="321" cy="105" fill="#fff" opacity=".7" r="4"></circle>
+<path d="M55 174h250v49H55z" fill="#f7f6ff"></path>
+<path d="M55 174v49m36-49v49m36-49v49m36-49v49m36-49v49m36-49v49m36-49v49m34-49v49" stroke="#4a416d" stroke-width="3"></path>
+<path d="M78 174h22v30H78zm72 0h22v30h-22zm36 0h22v30h-22zm72 0h22v30h-22z" fill="#2c2742"></path>
+<path d="M85 125c10-20 29-12 25 4-3 13-22 12-23 30" fill="none" stroke="#ffbd68" stroke-linecap="round" stroke-width="9"></path>
+<circle cx="84" cy="163" fill="#ffbd68" r="12"></circle>
+<path d="M201 91c12-23 35-14 30 5-4 15-26 14-27 35" fill="none" stroke="#7bf1de" stroke-linecap="round" stroke-width="9"></path>
+<circle cx="201" cy="136" fill="#7bf1de" r="12"></circle>
+<path d="M276 112c9-18 26-11 23 4-3 12-20 11-21 27" fill="none" stroke="#ff7ebe" stroke-linecap="round" stroke-width="8"></path>
+<circle cx="276" cy="147" fill="#ff7ebe" r="10"></circle>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Music &amp; sensory play</span>
+<h3>Sensory Piano</h3>
+<p>Touch the keys to create gentle sounds, calming colours and a pressure-free musical space.</p>
+<a aria-label="Open Sensory Piano game" class="play-link" href="https://jebinrufus.neocities.org" rel="noopener noreferrer" target="_blank">
+              Play Sensory Piano <span class="arrow">↗</span>
+</a>
+</div>
+</article>
+        <article class="game-card bubble">
+<div class="thumbnail">
+<span class="number-badge">07</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<defs>
+<radialgradient cx="30%" cy="25%" id="b1"><stop offset="0" stop-color="#fff" stop-opacity=".95"></stop><stop offset=".18" stop-color="#fff" stop-opacity=".28"></stop><stop offset="1" stop-color="#9deaff" stop-opacity=".32"></stop></radialgradient>
+</defs>
+<circle cx="96" cy="152" fill="url(#b1)" r="55" stroke="#fff" stroke-opacity=".75" stroke-width="4"></circle>
+<circle cx="212" cy="105" fill="url(#b1)" r="70" stroke="#fff" stroke-opacity=".75" stroke-width="4"></circle>
+<circle cx="290" cy="184" fill="url(#b1)" r="38" stroke="#fff" stroke-opacity=".75" stroke-width="4"></circle>
+<circle cx="61" cy="62" fill="url(#b1)" r="24" stroke="#fff" stroke-opacity=".75" stroke-width="4"></circle>
+<path d="M180 187c17-18 42-18 59 0" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="9"></path>
+<circle cx="190" cy="151" fill="#fff" r="6"></circle><circle cx="228" cy="151" fill="#fff" r="6"></circle>
+<path d="M137 57l9 16 18 4-13 12 2 18-16-8-16 8 2-18-13-12 18-4 9-16Z" fill="#ffef88"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Tap &amp; relax</span>
+<h3>Bubble Paradise</h3>
+<p>Tap floating bubbles, enjoy cheerful sounds and fill the world with happiness.</p>
+<a aria-label="Open Bubble Paradise game" class="play-link" href="https://vasanth551111.github.io/BubbleParadise/" rel="noopener noreferrer" target="_blank">
+              Play Bubble Paradise <span class="arrow">↗</span>
+</a>
+</div>
+</article>
+        <article class="game-card fruit">
+<div class="thumbnail">
+<span class="number-badge">08</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<circle cx="94" cy="157" fill="#f45d5d" r="42"></circle>
+<path d="M89 112c4-20 18-30 35-29-2 17-13 29-35 29Z" fill="#56a85f"></path>
+<path d="M96 115c-10-11-24-11-34-2 7 11 20 15 34 2Z" fill="#70c877"></path>
+<circle cx="213" cy="105" fill="#ffb33f" r="39"></circle>
+<path d="M205 65c5-18 20-25 35-20-4 15-17 24-35 20Z" fill="#59ad67"></path>
+<path d="M252 172c-11-37 13-62 42-53 24 8 31 42 11 64-16 18-44 13-53-11Z" fill="#8dcc57"></path>
+<path d="M48 214 310 47" opacity=".95" stroke="#fff" stroke-linecap="round" stroke-width="13"></path>
+<path d="m237 195 22-9-12-20" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="7"></path>
+<circle cx="58" cy="68" fill="#fff" opacity=".8" r="7"></circle>
+<circle cx="306" cy="84" fill="#fff" opacity=".8" r="5"></circle>
+<path d="m151 69 7 14 15 2-11 11 3 15-14-7-13 7 2-15-11-11 15-2Z" fill="#ffe76f"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Motion &amp; coordination</span>
+<h3>Fruit Slice</h3>
+<p>Move your index finger across the screen to slice gently falling fruit and build your score.</p>
+<a aria-label="Open Fruit Slice game" class="play-link" href="https://joshuadaniell.github.io/FruitSlice/" rel="noopener noreferrer" target="_blank">
+      Play Fruit Slice <span class="arrow">↗</span>
+</a>
+</div>
+</article>
+        <article class="game-card ufo">
+<div class="thumbnail">
+<span class="number-badge">09</span>
+<svg aria-hidden="true" viewbox="0 0 360 260">
+<circle cx="50" cy="53" fill="#fff" r="4"></circle><circle cx="303" cy="60" fill="#fff" r="5"></circle><circle cx="269" cy="123" fill="#fff" r="3"></circle><circle cx="76" cy="177" fill="#fff" r="3"></circle>
+<path d="M180 75c-28 0-50 18-52 41h104c-2-23-24-41-52-41Z" fill="#a891ff"></path>
+<ellipse cx="180" cy="124" fill="#d8d0ff" rx="91" ry="37"></ellipse>
+<ellipse cx="180" cy="119" fill="#6b5ec1" opacity=".7" rx="56" ry="20"></ellipse>
+<circle cx="124" cy="127" fill="#ffe77c" r="8"></circle><circle cx="180" cy="139" fill="#7cf1e1" r="8"></circle><circle cx="236" cy="127" fill="#ff82b5" r="8"></circle>
+<path d="M145 151 110 235h140l-35-84" fill="#8affeb" opacity=".22"></path>
+<path d="M180 177l8 16 18 3-13 13 3 18-16-9-16 9 3-18-13-13 18-3 8-16Z" fill="#ffe26f"></path>
+<path d="M289 174l6 12 13 2-10 10 3 13-12-6-12 6 3-13-10-10 13-2 6-12Z" fill="#ff91c8"></path>
+</svg>
+</div>
+<div class="card-copy">
+<span class="tag">Calm space adventure</span>
+<h3>UFO Adventure</h3>
+<p>Guide a friendly UFO through space and collect stars with no rush and no obstacles.</p>
+<a aria-label="Open UFO Adventure game" class="play-link" href="https://ufo-star-ea7c55.netlify.app/" rel="noopener noreferrer" target="_blank">
+              Play UFO Adventure <span class="arrow">↗</span>
+</a>
+</div>
+</article>
       </div>
-    </section>
-
-    <footer class="footer">
-      <span><strong>Calm Play Arcade</strong> · A shared launchpad for all seven games.</span>
-      <span>Tip: press <strong>Tab</strong> to move between game buttons.</span>
-    </footer>
-  </main>
+</section>
+<footer class="footer">
+<span><strong>Calm Play Arcade</strong> · A shared launchpad for all nine games.</span>
+<span>Tip: press <strong>Tab</strong> to move between game buttons.</span>
+</footer>
+</main>
 </body>
 </html>
